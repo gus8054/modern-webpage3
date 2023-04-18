@@ -9,9 +9,9 @@ const GetStartedBtn = ({ className }) => (
 
 const Header = ({ id }) => {
   return (
-    <header id={id} className="flex flex-col items-start gap-8 lg:flex-row ">
+    <header id={id} className="flex flex-col gap-8 lg:flex-row ">
       <div className="lg:w-2/3">
-        <div className="flex items-center w-max gap-x-4 py-1 px-4 rounded-md bg-gray-gradient">
+        <div className="inline-flex items-center gap-x-4 py-1 px-4 rounded-md bg-gray-gradient">
           <div>
             <img src={discount} alt={discount} />
           </div>
