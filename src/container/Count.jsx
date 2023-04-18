@@ -10,7 +10,7 @@ const Count = () => {
   return (
     <section className="m-auto flex flex-col gap-4 sm:w-full sm:flex-row sm:justify-between sm:items-center">
       {stats.map((stat) => (
-        <Stat id={stat.id} {...stat} />
+        <Stat key={stat.id} {...stat} />
       ))}
     </section>
   );

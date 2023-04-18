@@ -17,7 +17,7 @@ const Navbar = () => {
       </div>
       <ul className="hidden sm:flex flex-row gap-x-4  text-dimWhite text-lg font-bold">
         {navLinks.map((navLink) => (
-          <NavLink {...navLink} />
+          <NavLink key={navLink.id} {...navLink} />
         ))}
       </ul>
       <div className="block sm:hidden relative">

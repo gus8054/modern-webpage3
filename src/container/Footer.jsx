@@ -5,7 +5,7 @@ const FooterUL = ({ title, links }) => (
   <ul className="flex flex-col gap-y-4 items-start">
     <li className="text-white font-bold">{title}</li>
     {links.map((link) => (
-      <li>
+      <li key={link.name}>
         <a className="text-dimWhite hover:text-secondary" href={link.link}>
           {link.name}
         </a>
@@ -25,7 +25,7 @@ const Footer = () => {
       </div>
       <div className="flex justify-between items-start lg:basis-1/2">
         {footerLinks.map((footerLink) => (
-          <FooterUL {...footerLink} />
+          <FooterUL key={footerLink.title} {...footerLink} />
         ))}
       </div>
       <hr className="w-full" />

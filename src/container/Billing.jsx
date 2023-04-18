@@ -7,8 +7,12 @@ const Billing = ({ id }) => {
         <h1 className="text-white text-5xl font-bold leading-normal">Easily control your billing &amp; invoicing</h1>
         <p className="text-dimWhite leading-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, sequi est. Suscipit sunt nihil facilis inventore tempore obcaecati, quae consectetur.</p>
         <div className="flex gap-x-8 justify-start">
-          <img src={apple} alt={apple} className="flex-[0_1_9rem]" />
-          <img src={google} alt={google} className="flex-[0_1_9rem]" />
+          <div className="flex-[0_1_9rem]">
+            <img src={apple} alt={apple} />
+          </div>
+          <div className="flex-[0_1_9rem]">
+            <img src={google} alt={google} />
+          </div>
         </div>
       </div>
       <div className="flex-1 lg:order-1">
